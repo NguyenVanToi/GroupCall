@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>VideoCall by WebRTC</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/font-awesome.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/peer.js"></script>
+        <script src="js/socket.io.js"></script>
+        <script type="text/javascript" src="js/async.js"></script>
+    </head>
+    <body>
+        <div class="div-content container">
+            <h3>Users online</h3>
+            <ul id="ulUser">
+
+            </ul>
+            <div class="row">
+                <div class="col-md-offset-4 col-md-4 text-center">
+                    <video id="masterStream" class="item" width="300" controls></video>
+                    <button class="btn btn-primary masterBtn"><span class="fa fa-video-camera"> </span> Master</button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 text-center">
+                    <video id="remoteStream1" class="item" width="300" controls></video>
+                    <button class="btn-danger hide-btn remoteBtn1">Finish</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <video id="remoteStream2" class="item" width="300" controls></video>
+                    <button class="btn-danger hide-btn remoteBtn2">Finish</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <video id="remoteStream3" class="item" width="300" controls></video>
+                    <button class="btn-danger hide-btn remoteBtn3">Finish</button>
+                </div>
+                <div class="col-md-3 text-center">
+                    <video id="remoteStream4" class="item" width="300" controls></video>
+                    <button class="btn-danger hide-btn remoteBtn4">Finish</button>
+                </div>
+            </div>
+        </div>
+    <div class="div-sign-up col-lg-offset-4 col-md-4">
+        <div class="form-group">
+            <input type="text" id="txtUsername" placeholder="Enter your name" class="form-control">
+        </div>
+        <div class="sign-up">
+            <button id="btnSignUp" class="btn btn-primary btn-signup">Sign up</button>
+            <label class="check-box">
+                <input type="checkbox" class="master"> Master
+            </label>
+             <p class="text"></p>
+        </div>
+    </div>
+    </body>
+    <script src="main.js"></script>
+</html>

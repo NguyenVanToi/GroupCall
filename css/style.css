@@ -1,0 +1,49 @@
+#ulUser .mat-to {
+        cursor: pointer;
+}
+#ulUser li {
+    display: block;
+    font-size: 25px;
+}
+.fa-user-circle {
+    font-size: 15px;
+}
+.mat-to {
+        color: green;
+}
+.curr-user {
+        color: yellow;
+}
+.show-btn {
+        margin-right: 0 !important;
+}
+.hide-btn {
+    display: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.act {
+    display: inline-block;
+}
+body {
+    background-color: #7891AB !important;
+    color: #fff !important;
+}
+.item {
+    border: 1px solid #2e6da4;
+    width: 100%;
+    margin-top: 20px;
+}
+.btn-signup {
+    margin-right: 40px !important;
+}
+.div-sign-up {
+    margin-top: 20px;
+}
+.disabled{
+    pointer-events:none;
+    opacity:0.7;
+}
